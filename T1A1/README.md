@@ -4,17 +4,17 @@
 ## Question One --
 ###### *Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.*
 \
-////// **_Transmission Control Protocol/Internet Protocol (TCP/IP) and Domain Name System (DNS)_** \
+***////// Transmission Control Protocol/Internet Protocol (TCP/IP) and Domain Name System (DNS)*** \
 After the initial development of ARPANET the academic community began to widely adopt large networks of computers, and the number of those networks grew larger a shift from the initial information transfer protocol and naming convention of those networks allowed for two thing. It made the information transfer more reliable with ways to deal with information that was lost along the way and introduced a better naming scheme for the vast amount of network address that were being created. These two thing that happened relatively close to each other allowed for massive growth and rapid adoption of the internet
 
-////// **_HyperText Markup Language (HTML)_**\
+***////// HyperText Markup Language (HTML)***\
 Toward the end of 1990 a man by the name of Tim Berners released a mark up language that allowed people to write and format web pages. It was a very important development for the internet because it allowed anyone, anywhere with any text editor to participate in making websites. with only a handful of tags to indicate different parts of a web page anyone could master it in a day and be developing. As he released it for free forever it caused a massive explosion of creativity and web development.
 
 
-////// ***The Google search engine is born***\
+***////// The Google search engine is born***\
 In the late nineties the search engine we all use everyday was born. Google fundamental changed what it meant to look something up or find something out. "Just Google it", right? The mission state was *"to organize the world's information and make it universally accessible and useful"* and they sure have. Not many people move past the first listing of a google search. This technology helped enthusiasts and casual users alike find all of the relevant information they wanted.
 
-///// ***The Smartphone, the ultimate human-machine interface***\
+***///// The Smartphone, the ultimate human-machine interface***\
 In 2007, Apple reveled the iPhone. The first true smartphone created so many opportunities to advance the internet for both consumers and business. Humans could now take the internet in there pocket and it increased not only convenience, but an opportunity for business to develop apps for the device to make it more valuable to the consumers. This created a whole new industry of app development. The use of Facebook, Twitter, Instagram and many other internet reliant apps allowed consumers to connect and business to gather data about consumers to better sell to them.
 
 #### [Sources]---
@@ -32,16 +32,16 @@ In 2007, Apple reveled the iPhone. The first true smartphone created so many opp
   - routers and routing
   - domains and DNS
 
-////// ***Packets***\
+***////// Packets***\
 Packets are how large quantities of data that make up a complete file can be broken down into smaller pieces to be sent across the internet. With out packets, whole files would have to be sent across the internet. if any of the data got corrupted or the file got lost on it's route the effort to send it in the first place would be wasted. packets are much smaller pieces of information that have specific characteristics encoded that help with error correction and reassembly on the other side. Because the packets are smaller in size if one gets corrupted its much quicker to resend that packet then the whole of the file.
 
-////// ***IP addresses (IPv4 and IPv6)***\
+***////// IP addresses (IPv4 and IPv6)***\
 IP or internet protocol addresses are the destinations we send our packets, more specifically the formatting of the address on the packets we are sending. many things can be encoded into these addressing labels to ensure that the packet reaches the intended location. Information that checks for errors at the end point, helps middle men decide how to most efficient pass the packet forward and determine which machine in a network it has to get to is all encoded. This is true of both IPv4 and IPv6 addresses but the major difference is between the two is the size of the addresses. Ipv4 uses 32bits (leading to roughly four billion addresses that we have essentially run out of) and IPv6 uses 128bits. (Which would allow for each person on earth to have a trillion computers and still have all machines uniquely addressed).
 
-////// ***Routers and Routing***\
+***////// Routers and Routing***\
 Routers are responsible for the actual transfer of packets through the internet and routing is the choice of pathing through the internet. Routing is very important because it deals with a few of the problems with packets on a multiple node network. such as making sure packets don't end up in infinite loops (this boost performance by reducing unnecessary traffic) and make sure a path through the internet stays open and reserved ensure that a constant stream of data can flow which makes services like Video Calling possible. Routers are the Nodes that know where the next destination on the way for a packet is going to be and keeps up to date tables of which next steps are open or which blockages need to be circumvented.
 
-////// ***Domains and DNS***\
+***////// Domains and DNS***\
 If packets are like letters, and IP addresses are like well the address for the letter, and routers are like the postmen/women then DNS (Doamin Name Servers) and Domains are like the post offices. Domains are the .com's, .org's, .gov's and the .au's, .fr's, .tv's. You can compare domains in this analogy to suburbs and DNS's as local post offices. The person at the post office may not know where the address is but they know the postmen that will deliver it on his route. DNS's are the ultimate address book, they are the machine you ask where to send your packets if no other machines know. In this way they play a vital role in getting information transferred across the internet
 
 
@@ -59,13 +59,13 @@ If packets are like letters, and IP addresses are like well the address for the 
   - HTTP and HTTPS
   - Web browsers (requests, rendering and developer tools)
 
-////// ***TCP (Transmission Control Protocol)***\
+***////// TCP (Transmission Control Protocol)***\
 TCP is a standard that defines how two machines can share information of separate networks. features include the ability to split up information and send it. Receive those backs and check if there are any errors. Re-sending information if it was lost and rearrange all the packets into the order they were sent. TCP is a connection orientated protocol meaning once a connection between two machines the virtual circuit (or route the information takes through the internet) will remain open until such time that ALL data is received. If information is lost along the way the end machine can request the information to be resent and when it finally has all the information TCP will reorganize it into the order it was sent in. It is for this reason TCP is sometimes referred to as a **"RELIABLE"** connection.
 
-//////***HTTP and HTTPS***\
+***////// HTTP and HTTPS***\
 Hyper Text transfer Protocol and HTTP Secure are methods by which content is accessed on the internet. When clicking a link on a web page your computer sends a request off to another machine in the world where the information about the page is stored and asks to be sent the data required to display the web page. In the early days of the internet all that was requested was the HTML code. Nowadays there are many additional components including but not limited to CSS and Javascript that make the web page more visually appealing or create a better user experience. HTTPS came around to address privacy and security concerns. It works in much the same way as HTTP the fundamental difference is that HTTPS encrypts all information such that nothing is sent in a human readable fashion and would require a "private key" known only to the server to read it. This makes it appropriate to use when sending information like password or credit card details.
 
-//////Web browsers (requests, rendering and developer tools)\
+***////// Web browsers (requests, rendering and developer tools)***\
 Requests are how the browser gets the information from the server a page is hosted on to be able to display it. It will do a DNS lookup, where it talks to the closest DNS server to convert the human readable www.blahblah.com address it has received and converts it to the computer usable IP adress which will look something like 159.122.35.130. Once it has the correct address, it will then ask that server to provide the necessary data like HTML and CSS etc... to be able to render the page.
 
 Rendering is what the page does once it has received all the information. It'll apply the CSS to the HTML and run any Javascript that is required to display the page correctly, and then display it on screen in the order that is determined by the HTML and with the styling that is determined by the CSS.
@@ -82,13 +82,13 @@ Developer tools are a set of tools that let developers diagnose problems in code
 #### Question Four --
 ###### Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.
 
-//////Arrays\
+***////// Arrays***\
 Arrays are a type of list like data structure. It can be thought of as an unorganized list as the items in the list are only sorted (or indexed) in the order that they we're added to the array. The indexing begins at 0 and you can have effectively as many items in an array as you like.
 
-//////Hashes\
+***////// Hashes***\
 Hashes are very similar to arrays in the sense they are a list like data structure as well. They *KEY* difference is that instead of being indexed implicitly with numbers counted from 0, the items in the list are organized into categories by name. These names (called keys) point to a value of some kind. The values can generally be anything you like. string, integer, array or hash to name a few. This is very powerful because it makes it much easier to call a specific value rather then having to recall the number it was indexed at which may change as the list grows or shortens.
 
-//////Classes\
+***////// Classes***\
 Classes are very important and powerful data structures within Ruby. As Ruby is a Object Orientated language and describing Classes is fundamental in describing objects. A class is a piece of code that describes things that exist, this seems abstract but let's take the case of a Person. People exist, and there are commonalities between all people. A Person will have a name, they will eat food and sleep. So defining a class called Person would be handy when trying to write code involving many people. when we define specific people when can give each person a different name but all of them will still eat and sleep. Further we can create sub-classes of people. For example Joe is a Bus Driver and Elizabeth is a Programmer. It is unlikely that Joe knows how to program and Elizabeth is unlikely to know how to drive a bus, They are both still People but if we create sub-classes of People, BusDriver and Programmer, we can make it so that while both people only Joe knows how to `def drive()` and only Elizabeth knows how to `def code()`. In short Classes are good to reduce repetitive code when describing real world objects. They are also good at controlling flow of information by setting accessors and reader methods in the class. This means that some information can be passed to the object to store but then it will never divulge the information again or we can declare some information about an object that can be accessed but never changed so we can be sure of certain properties of an object stay the same for future reference, like a person's name for example.
 
 #### [Sources]---
@@ -100,10 +100,10 @@ Classes are very important and powerful data structures within Ruby. As Ruby is 
 #### Question Five --
 ###### Describe the features of interpreters and compilers and how they are different.
 
-//////Interpreters\
+***////// Interpreters***\
 A interpreted language is code that requires a interpreter to be understood by the machine trying to execute the code. The advantage of this type of code is that it can be made cross platform. As long as the machine has a interpreter that can run the code then that code can be executed on the machine. The drawback is that it make interpreted code (in comparison with compiled code) slower to run as there is an extra step of translation that happens to tell the machine what to do. Typically code of this type is the program and when it is run the interpreter reads the code line by line and sends commands to the machine in a language it understands.
 
-//////Compilers\
+***////// Compilers***\
 In stark contrast to interpreted languages, compiled language need to be processed by a compiler so that the human readable source code can be converted into machine language. This has a side effect of making the code faster to run as no translation needs to happen before the code is run. It has the draw back of making the code less portable as the source code needs to be compiled specifically into the machine language the code is going to run on. this means that if you compile the source code on a Windows machine it won't work on a Mac machine as it won't understand the windows machine language. There are a special case of compiled languages like Java which is compiled "just-in-time". programs like this a compiled on the fly inside a virtual machine or run-time that exists on the host machine. The run-time will compile the to code just before it is executed and send of the translated code to the machine as it is executed. This makes the code much more portable and quicker to compile but has the drawback that if written poorly it will slow down the just-in-time compiling and negate the performancebost gained by using the run-time to compile.
 
 #### [Sources]---
@@ -113,10 +113,10 @@ In stark contrast to interpreted languages, compiled language need to be process
 #### Question Six --
 ###### Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.
 
-//////Ruby\
+***////// Ruby***\
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-//////Javascript\
+***////// Java***\
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
@@ -146,13 +146,13 @@ List of topics containing ethical issues:
 ```
 ######For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
 
-//////Answer here.\
+***////// Answer here.***\
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 ######  Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.
 
-//////Answer here.\
+***////// Answer here.***\
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 #### [Sources]---
@@ -220,16 +220,16 @@ Type coercion is how a programming language deals with data types. some language
   - Identify the classes you would use to solve the problem
   - Write a short explanation of why you would use the classes you have identified
 
-  //////Menu Class\
+  ***////// Menu Class***\
   There would have to be some sort of menu class to contain the information about the various products that are available to purchase. But this likely an example of a subclass ItemMenu that would also handle the building of orders, I would also use this class to display a staff menu for adding removing and changing price of items.
 
-  //////Product Class\
+  ***////// Product Class***\
   This would hold all the items that were on offer and the information associated with the item. Name, Price, Type (food, drink, utility if like knives and forks or packaging) quantity available.
 
-  //////Till Class\
+  ***////// Till Class***\
   This would track the transactions between the restaurant and customers and keep track of change on hand, and the money coming in. it would also update the inventory
 
-  //////Info Class\
+  ***////// Info Class***\
   This class would keep track of the information about orders, who placed them, whether they had paid or not, how long had they been waiting, whether the order was complete or pending.
 
 #### [Sources]---
