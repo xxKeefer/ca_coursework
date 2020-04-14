@@ -1,7 +1,8 @@
 require "colorize"
 
 class Hand
-	attr_reader :value, :cards
+	attr_reader :value
+	attr_accessor :cards
 	def initialize
 		@cards=[]
 		@size = @cards.size
@@ -59,6 +60,10 @@ class Hand
 	def collect(card)
 		@cards.push(card)
 		update_handval
+	end
+
+	def clear
+		self.cards = []
 	end
 
 	def hide

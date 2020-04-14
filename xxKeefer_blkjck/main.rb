@@ -1,13 +1,37 @@
 require_relative "./modules/deck.rb"
 require_relative "./modules/player.rb"
 
-
-
 def game
 	puts `clear`
 	player = Player.new()
 	dealer = Dealer.new()
 	deck = Deck.new()
+
+	while player.bank.funds > 0
+		puts "Available funds: $#{player.bank.funds}"
+		case player.prompt_action("cash out", "bet")
+		when 0
+			break
+		when 1
+			puts "How much to bet?"
+			bet = gets.strip.to_i
+			#####################
+			#validate later
+			####################
+			player.bank.bet(bet)
+			player.hand.clear
+			dealer.hand.clear
+			case deal(player, dealer, deck)
+			when "#{player.name} WINS!"
+				player.bank.add(bet*2)
+			else
+				puts "Lost $#{bet}"
+			end
+		end
+	end
+end
+
+def deal player, dealer, deck
 
 	all_bust = false
 	until all_bust
@@ -23,7 +47,7 @@ def game
 		while turn == "player"
 			display_info(player, dealer)
 
-			choice = player.prompt_action
+			choice = player.prompt_action("STAND", "HIT")
 			case choice
 				when 1
 				player.hit(deck)
@@ -56,9 +80,9 @@ def game
 			wait_for_ack
 		end
 
-		puts checkwin(player,dealer)
+		puts outcome = checkwin(player,dealer)
 		wait_for_ack
-
+		return outcome
 	end
 end
 

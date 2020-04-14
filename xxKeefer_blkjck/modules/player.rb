@@ -35,14 +35,15 @@ class Player
 		puts "! #{self.name} BUSTED !"
 	end
 
-	def prompt_action
-		puts "[0] : STAND | [1] : HIT"
+	def prompt_action(*choice)
+		puts "[0] : #{choice[0].upcase} | [1] : #{choice[1].upcase}"
 		#####################
 		#validate input later
 		#####################
 		choice = gets.strip.to_i
 		return choice
 	end
+
 
 	def disp_value
 		puts "#{self.name} HAVE: #{self.hand.value}"
