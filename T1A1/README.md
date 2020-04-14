@@ -116,13 +116,13 @@ In stark contrast to interpreted languages, compiled language need to be process
 ***////// Ruby***\
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-***////// Java***\
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+***////// Python***\
+Python differs from ruby in two key ways. Firstly the philosphy of Pyhton is about simplicity and directness. In Python there tends to be only one way to write a peice of code. This results in code that is easier to debug. While like in Ruby variables are dynamically typed meaning you don't have to declare what they are before you initiate them, Pyhton's methods and functions tend to be very explicit. This means that if you as a programmer write a peice of code to do something specific, it is likely the only way to achieve that in pythons and the next coder to read you code will be able to understand it as it is likely the way he or she would have written the same code. The second key difference is the communities that surround both languages pushing the languages development. While Ruby is very focussed on web development, there is a very strong academic community focussed on Mathematics and Data Science that love Python. This has lead to many libraries concerned with discrete mathematics and processing or visualizing data to be developed for Python. Tis gives the language a distinct advantage of Ruby in that specific area of programming. The obvious drawback of Python over Ruby is that due to the philosphy of "there should be only one way" to do anything in the code, the code becomes much less human readable and for les elegant to code. Something that may require only two lines of code in Ruby can blow out to several lines of code in Python. However, the exact instructions given to the machine will be evident in the syntax of those several lines, in Ruby a lot of what exactly is happening is hidden behind Ruby's flexible code.
 
 
 #### [Sources]---
-1. []()
-2. []()
+1. [Ruby vs. Python: What’s the Difference? -- Mattan Griffel ](https://learn.onemonth.com/ruby-vs-python/)
+2. [Comparison: Ruby vs. Python -- KAMI MALDONADO](https://stackify.com/ruby-vs-python/)
 3. []()
 4. []()
 5. []()
