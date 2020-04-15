@@ -104,7 +104,7 @@ Classes are very important and powerful data structures within Ruby. As Ruby is 
 A interpreted language is code that requires a interpreter to be understood by the machine trying to execute the code. The advantage of this type of code is that it can be made cross platform. As long as the machine has a interpreter that can run the code then that code can be executed on the machine. The drawback is that it make interpreted code (in comparison with compiled code) slower to run as there is an extra step of translation that happens to tell the machine what to do. Typically code of this type is the program and when it is run the interpreter reads the code line by line and sends commands to the machine in a language it understands.
 
 ***////// Compilers***\
-In stark contrast to interpreted languages, compiled language need to be processed by a compiler so that the human readable source code can be converted into machine language. This has a side effect of making the code faster to run as no translation needs to happen before the code is run. It has the draw back of making the code less portable as the source code needs to be compiled specifically into the machine language the code is going to run on. this means that if you compile the source code on a Windows machine it won't work on a Mac machine as it won't understand the windows machine language. There are a special case of compiled languages like Java which is compiled "just-in-time". programs like this a compiled on the fly inside a virtual machine or run-time that exists on the host machine. The run-time will compile the to code just before it is executed and send of the translated code to the machine as it is executed. This makes the code much more portable and quicker to compile but has the drawback that if written poorly it will slow down the just-in-time compiling and negate the performancebost gained by using the run-time to compile.
+In stark contrast to interpreted languages, compiled language need to be processed by a compiler so that the human readable source code can be converted into machine language. This has a side effect of making the code faster to run as no translation needs to happen before the code is run. It has the draw back of making the code less portable as the source code needs to be compiled specifically into the machine language the code is going to run on. this means that if you compile the source code on a Windows machine it won't work on a Mac machine as it won't understand the windows machine language. There are a special case of compiled languages like Java which is compiled "just-in-time". programs like this a compiled on the fly inside a virtual machine or run-time that exists on the host machine. The run-time will compile the to code just before it is executed and send of the translated code to the machine as it is executed. This makes the code much more portable and quicker to compile but has the drawback that if written poorly it will slow down the just-in-time compiling and negate the performance boost gained by using the run-time to compile.
 
 #### [Sources]---
 1. [What is the difference between a compiled and an interpreted program? -- Indiana University Knowledge Base](https://kb.iu.edu/d/agsz)
@@ -114,18 +114,48 @@ In stark contrast to interpreted languages, compiled language need to be process
 ###### Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.
 
 ***////// Ruby***\
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ruby has been designed with the philosophy that it should be human readable first and that writing and reading Ruby code should be intuitive, almost as intuitive as regular English. This flexible and powerful syntax lets developers code, prototype and pivot very quickly. This flexibility comes from the many similar methods built into Ruby. For example there are many ways to loop through an array, you could:
+```ruby
+array = []
+
+# do this
+for item in array
+  puts item
+end
+
+# or have it on a single line like this
+array.each {|item| puts item}
+
+#or something like this
+i=0
+while i<array.length
+  puts array[i]
+  i+=1
+end
+
+#this looks the same but it shows off
+#that the .length and .size are the same
+#method with different names
+i=0
+while i<array.size
+  puts array[i]
+  i= i+1
+end
+```
+The other difference between Ruby and Python is the communities surrounding the language and what those communities are focused on. It can be said that the Ruby community is always at the bleeding edge of web development. The web frame work for ruby us called Ruby on Rails and is the platform that many big / popular websites are built upon and is one of the reasons why Ruby is as big as it is.  A major contributing factor to RoR's popularity is it's design of convention over configuration. This just means a lot of the tedious parts of web app development are automated in a predefined way (or according to convention). The upside of this is that developers get to focus on the more interesting potentially revenue generating features of an app. Thus the app is produced much faster with all the humdrum taken care of the automated convention. The downside is that you have to be aware of the convention to begin with to be able to understand how your app works, this can make RoR a more difficult framework to learn to begin with. The major drawbacks associated with ruby are to do with performance and ability to scale up. The reasons for this is that ruby just is slower to execute than some other language choices, and with such flexible code it is easy for inexperienced devs to write non optimal code which slows down the system further. Just because there are many ways to skin a cat doesn't mean that there isn't a best way to do it. But these issue can be address with experience and the fact that Ruby 3 coming 2020 is said to be three times faster to execute.
+
 
 ***////// Python***\
-Python differs from ruby in two key ways. Firstly the philosphy of Pyhton is about simplicity and directness. In Python there tends to be only one way to write a peice of code. This results in code that is easier to debug. While like in Ruby variables are dynamically typed meaning you don't have to declare what they are before you initiate them, Pyhton's methods and functions tend to be very explicit. This means that if you as a programmer write a peice of code to do something specific, it is likely the only way to achieve that in pythons and the next coder to read you code will be able to understand it as it is likely the way he or she would have written the same code. The second key difference is the communities that surround both languages pushing the languages development. While Ruby is very focussed on web development, there is a very strong academic community focussed on Mathematics and Data Science that love Python. This has lead to many libraries concerned with discrete mathematics and processing or visualizing data to be developed for Python. Tis gives the language a distinct advantage of Ruby in that specific area of programming. The obvious drawback of Python over Ruby is that due to the philosphy of "there should be only one way" to do anything in the code, the code becomes much less human readable and for les elegant to code. Something that may require only two lines of code in Ruby can blow out to several lines of code in Python. However, the exact instructions given to the machine will be evident in the syntax of those several lines, in Ruby a lot of what exactly is happening is hidden behind Ruby's flexible code.
+Python differs from ruby in two key ways. Firstly the philosophy of Python is about simplicity and directness. In Python there tends to be only one way to write a piece of code. This results in code that is easier to debug. While like in Ruby variables are dynamically typed meaning you don't have to declare what they are before you initiate them, Python's methods and functions tend to be very explicit. This means that if you as a programmer write a piece of code to do something specific, it is likely the only way to achieve that in pythons and the next coder to read you code will be able to understand it as it is likely the way he or she would have written the same code. The second key difference is the communities that surround both languages pushing the languages development. While Ruby is very focused on web development, there is a very strong academic community focused on Mathematics and Data Science that love Python. This has lead to many libraries concerned with discrete mathematics and processing or visualizing data to be developed for Python. This gives the language a distinct advantage of Ruby in that specific area of programming. The obvious drawback of Python over Ruby is that due to the philosophy of "there should be only one way" to do anything in the code, the code becomes much less human readable and for less elegant to code. Something that may require only two lines of code in Ruby can blow out to several lines of code in Python. However, the exact instructions given to the machine will be evident in the syntax of those several lines, in Ruby a lot of what exactly is happening is hidden behind Ruby's flexible code.
 
 
 #### [Sources]---
 1. [Ruby vs. Python: What’s the Difference? -- Mattan Griffel ](https://learn.onemonth.com/ruby-vs-python/)
 2. [Comparison: Ruby vs. Python -- KAMI MALDONADO](https://stackify.com/ruby-vs-python/)
-3. []()
-4. []()
-5. []()
+3. [Why is Ruby on Rails A Pitch Perfect Back End Technology? -- Dev Shankar Ganguly
+](https://blog.goodaudience.com/why-is-ruby-on-rails-a-pitch-perfect-back-end-technology-f14d8aa68baf)
+4. [Why Ruby on Rails Is Still a Good Choice in 2020 [UPDATED] -- Maja Nowak](https://www.monterail.com/blog/why-ruby-on-rails-development-2020)
+5. [Convention Over Configuration -- Francisco Sáez](https://facilethings.com/blog/en/convention-over-configuration)
 ---
 #### Question Seven --
 #### 	Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
