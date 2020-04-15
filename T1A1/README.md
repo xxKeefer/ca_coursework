@@ -134,8 +134,8 @@ while i<array.length
 end
 
 #this looks the same but it shows off
-#that the .length and .size are the same
-#method with different names
+#that the .length and .size are similar
+#methods with different names
 i=0
 while i<array.size
   puts array[i]
@@ -237,11 +237,29 @@ Type coercion is how a programming language deals with data types. some language
 #### Question Ten --
 ###### Describe the data types recognized by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.
 
+//////Booleans\
+Booleans are represented by two values, true and false. It is with these two values that we implement control flow in code. in Ruby this data type is split into two classes. `TrueClass` and `FalseClass`. Booleans are one of the most fundamental data types as they allow us to evaluate the state of objects in code. Is something greater than? is this a something? all of this is made possible by true and false.
+
+//////Symbols\
+Symbols are like a special case of Strings. Symbols are declared by starting the string with a colon. `:this_is_a_symbol` It can have no spaces, the unique aspect of symbols that separates them from strings is that they are uniquely and stored in memory. declaring the same string twice `"twice"` and `"twice"` for example may result in two different strings stored in separate memory locations, but declaring `":twice"` and `"twice"` refers to the same memory location. This creates a performance boost over strings if you don't need the other functionality of strings and makes symbols uniquely suited to the task of being key names for hashes.
+
+//////Numbers\
+Ruby can describe a lot of different types of numbers, the basic two are Integers and Floats. Integers are whole numbers from negative infinity to positive infinity and Floats are all of the decimal numbers . Due to the limits of precision involved in a binary system Ruby further splits these classes in Fixnum and Bignum for Integers and Floats into BigDecimal and Float. the "big" variants of this class are to deal with very large or very precise numbers while Fixnum and Float deal with numbers not large enough or that don't require enough precision for a binary counting system to effect the output of the numbers. Interestingly Ruby can also handle complex numbers of the form `3+4i` as well.
+
+//////Strings\
+A string in Ruby is an object that holds a collection of characters that represents text based data. On a fundamental level a string is essentially an array of bytes.
+
+//////Arrays\
+Ruby-doc.org defines arrays as ordered, interger indexed collections of any object. More simply it is a list of objects that hare ordered by the sequence that they were entered into the list and can be called upon by asking for its position in the list. The indexing for this begins at 0.
+
+//////Hashes\
+Hashes are very similar to arrays in that they are ordered lists of any object. the key difference that instead of only using integers to index the items in the list. the index for hashes (commonly known as keys) can be the form of any object type. This makes hashes very powerful as you can associate something much more memorable than and arbitary integer with the information that the index contains.
+
 #### [Sources]---
-1. []()
-2. []()
-3. []()
-4. []()
+1. [Ruby data types -- Jan Bodnar](http://zetcode.com/lang/rubytutorial/datatypes/)
+2. [Ruby Data types -- JavaTpoint](https://www.javatpoint.com/ruby-data-types)
+3. [Ruby | Data Types -- Shivi Aggarwal](https://www.geeksforgeeks.org/ruby-data-types/)
+4. [BigDecimal -- James Britt and Neurogami](https://ruby-doc.org/stdlib-2.5.1/libdoc/bigdecimal/rdoc/BigDecimal.html)
 5. []()
 ---
 #### Question 11 --
