@@ -17,6 +17,7 @@
 
 def interesting_number(number)
   numbers_arr = number.to_s.split(//).map { |e| e.to_i }
+  return false if numbers_arr.length < 3
   mask = gen_mask(numbers_arr.length, numbers_arr.first, ascending?(numbers_arr))
   number.modulo(mask) == 0 ? true : false
 end
