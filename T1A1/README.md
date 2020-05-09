@@ -280,22 +280,26 @@ Hashes are very similar to arrays in that they are ordered lists of any object. 
   ***////// Info Class***\
   This class would keep track of the information about orders, who placed them, whether they had paid or not, how long had they been waiting, whether the order was complete or pending.
 
-#### [Sources]---
-1. []()
-2. []()
-3. []()
-4. []()
-5. []()
 ---
 #### Question 12 --
-###### [instruction_written_here]
+###### Identify and explain the error in the following code that is preventing correct execution of the program.
+```ruby
+celsius = gets
+fahrenheit = (celsius * 9 / 5) + 32
+print "The result is: "
+print fahrenheit
+puts "."
+```
+The error in this code is that we forget to convert the input celsius received from the `gets` command which is a string into an integer so that weh can do math with it. One correct solution is as follows:
 
-#### [Sources]---
-1. []()
-2. []()
-3. []()
-4. []()
-5. []()
+```ruby
+celsius = gets
+fahrenheit = (celsius.to_i * 9 / 5) + 32
+print "The result is: "
+print fahrenheit
+puts "."
+```
+
 ---
 #### Question 13 --
 ###### [instruction_written_here]
