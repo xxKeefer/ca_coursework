@@ -302,8 +302,26 @@ puts "."
 
 ---
 #### Question 13 --
-###### [instruction_written_here]
-Answer for question written here.
+###### The following code looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+```ruby
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i < arr.size - 1 and arr[i] < arr[i + 1])
+  i = i + 1 end
+puts i
+arr[i] = arr[i + 1]
+arr[i + 1] = arr[i]
+```
+###### //////My Solution:
+```ruby
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+i += 1 while (i < arr.size - 1) && (arr[i] < arr[i + 1])
+puts i
+temp = arr[i]
+arr[i] = arr[i + 1]
+arr[i + 1] = temp
+```
 
 #### [Sources]---
 1. [document_name](link_or-URI)
