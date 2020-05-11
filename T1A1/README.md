@@ -324,11 +324,8 @@ arr[i + 1] = temp
 ```
 
 #### [Sources]---
-1. [document_name](link_or-URI)
-2. []()
-3. []()
-4. []()
-5. []()
+1. [Rubocop Style Guide](https://github.com/rubocop-hq/ruby-style-guide)
+
 ---
 #### Question 14 --
 ###### [instruction_written_here]
